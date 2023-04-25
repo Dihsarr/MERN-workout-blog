@@ -4,6 +4,7 @@
 const express = require('express')
 //used to extrapolate routing code to another file
 const workoutRoutes = require('./routes/workouts');
+const userRoutes = require('./routes/user')
 //used to connect to the database
 const mongoose = require('mongoose');
 
@@ -25,6 +26,7 @@ app.use((req, res, next) =>{
 
 //handles the routes
 app.use('/api/workouts',workoutRoutes);
+app.use('/api/user', userRoutes);
 
 // connect to db
 mongoose.connect(process.env.MONGO_URI)

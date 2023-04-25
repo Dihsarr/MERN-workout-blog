@@ -1,5 +1,5 @@
 //handles all the routing, exports the router so server.js can use it
-const expess = require('express');
+const express = require('express');
 const {createWorkout,
       getWorkout,
       getWorkouts,
@@ -8,7 +8,7 @@ const {createWorkout,
     } = require('../controllers/workoutController')
 
 //creates an instance of the app router
-const router = expess.Router();
+const router = express.Router();
 
 //gets all workouts
 router.get('/', getWorkouts)
