@@ -11,6 +11,7 @@ const mongoose = require('mongoose');
 //loads the .env file into process.env
 require('dotenv').config()
 
+
 //creates express app
 const app = express();
 
