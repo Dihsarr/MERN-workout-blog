@@ -1,4 +1,4 @@
-//handles all the route logic as to not clod the workouts file
+//handles all the route logic as to not clog the workouts file
 const Workout = require('../models/workoutModels')
 const mongoose = require('mongoose')
 
